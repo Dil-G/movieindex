@@ -14,11 +14,21 @@ body{
 }
 .control{
     margin-top: 12px;
+    display:inline;
     
 }
+.control input{
+    color: black;
+}
+input , .button{
+    
+     display:inline;
+}
+
 .control .button{
     background-color: rgba(165, 164, 164, 0);
     border-radius: 20px;
+     display:inline;
 }
 .input{
     background: rgb(243, 242, 242);
@@ -28,6 +38,8 @@ body{
 h1.title{
     color:#fefefa;
 }
+
+
 
 .tile{
     background-color: rgb(245, 245, 245);
@@ -56,12 +68,14 @@ h1.title{
    padding: 20px;
    margin: 5px;
    background-color: rgba(213, 194, 194, 0.714);
+   height: auto;
+   text-align: center;
 }
 
-.section{
+ .welcome{
     padding: 100px;
     margin-bottom: 30px;
-   background-image: url(images/star-wars-the-force-awakens-poster-landscape.jpg) ;
+   background-image: url(../images/star-wars-the-force-awakens-poster-landscape.jpg) ;
    opacity: 0.7;
    background-repeat: no-repeat;
    background-size: cover;
@@ -69,6 +83,12 @@ h1.title{
    height:500px;
    background-position: center;
 
+}
+
+.image{
+    display:block;
+    margin:auto;
+    padding: 10px;
 }
 
 .level{

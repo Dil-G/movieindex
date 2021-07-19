@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="./css/movie.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>Document</title>
 </head>
@@ -30,11 +30,8 @@
         Home
       </a>
 
-      <a class="navbar-item">
-        A
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable is-boxed">
+     
+      <!-- <div class="navbar-item has-dropdown is-hoverable is-boxed">
         <a class="navbar-link">
           More
         </a>
@@ -51,19 +48,12 @@
           </a>
           
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div class="navbar-end">
         <div class="field has-addons is-flex" >
-            <div class="control ">
-              <input class="input is-small" type="text" placeholder="Search Movie">
-            </div>
-            <div class="control">
-              <a class="button is-small is-dark">
-                <i class="fas fa-search"></i>
-              </a>
-            </div>
+           
           <a class="navbar-item has-text-white">
             <strong>Sign up</strong>
           </a>
@@ -76,38 +66,11 @@
 </nav>
 
 
-<div class="container">
-    <h1 class="title is-3"> Movie Name</h1>
-<hr/>
-  <div class="columns">
-      <div class="column is-three-quarter">
-          <div class="tile ">
-              <div class="box">
-                  <a>
-                      <figure class="main-image">
-                      <img src="images/91WNnQZdybL._AC_SL1500_.jpg">
-                      </figure>
-                  </a>
-              </div>
-              <p>Synopsis<br>
-                While trick-or-treating, Francine meets an elderly woman with a very mysterious past; Binky finds
-                 himself at Mr. Ratburn's amazing haunted house; and Arthur, Buster and Ladonna fear the tree house may be haunted<br></p>
-          </div>
-      </div>
-      
-      <div class="column is-one-quarter">
-        
-           <div class="box1">
-            <div class="button is-small is-success is-fullwidth">Download</div>
-            <div class="button is-small is-transparent is-dark is-halfwidth">720</div>
-            <div class="button is-small is-transparent is-dark is-halfwidth">360</div>
-
-          </div> 
-    </div>
-  </div>
+<div class="container" id="movies">
+   
 
   <div class="left">
-  <div class="columns">
+  <!-- <div class="columns">
     <div class="column">
       <h1 class="title is-5">
        Comments
@@ -123,9 +86,9 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
     
-  <div class="columns">
+  <!-- <div class="columns">
     <div class="column">
 
        <div class="tile">
@@ -136,10 +99,10 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 </div>
 
-<div class="right">
+<!-- <div class="right">
 
   <div class="table-container">
     <table class="table">
@@ -182,7 +145,7 @@
 
      
 </div>
-</div>
+</div> -->
 
 </div>
 
@@ -221,7 +184,10 @@
         </div>
       </div>
     </nav>
-    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>getMovie();</script>
 
 </body>
 </html>

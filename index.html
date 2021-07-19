@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>Document</title>
 </head>
@@ -12,7 +12,7 @@
 
     <nav class="navbar is-fixed-top is-fixed  is-hoverable is-transparent ">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
+            <a class="navbar-item">
             </a>
             <!--Burger when using mobile phones-->
         <a class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -25,9 +25,10 @@
   <div  class="navbar-menu">
       
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item" href="index.html">
         Home
       </a>
+
 
       <a class="navbar-item">
         About us
@@ -52,15 +53,20 @@
     </div>
 
     <div class="navbar-end">
-        <div class="field has-addons is-flex" >
-            <div class="control ">
-              <input class="input is-small" type="text" placeholder="Search Movie">
-            </div>
-            <div class="control">
+          <div class="field has-addons">
+            <form class="control" id="searchForm">
+              <input class="input search is-small" id="searchText" type="text" placeholder="Search Movie">
+                <!-- <button type="submit" class="button is-small is-dark" ><i class="fas fa-search"></i></button> -->
+  
+            </form>
+          </div>
+
+
+            <!-- <div class="control">
               <a class="button is-small is-dark">
                 <i class="fas fa-search"></i>
               </a>
-            </div>
+            </div> -->
           <a class="navbar-item has-text-white" href="register.html">
             <strong>Sign up</strong>
           </a>
@@ -68,11 +74,10 @@
             <strong>Log In</strong>
           </a>
       </div>
-    </div>
   </div>
 </nav>
 
-<section class="section has-text-centered">
+<section class="section welcome has-text-centered">
     <h1 class="title is-1 ">WELCOME</h1>
 </section>
 
@@ -82,162 +87,12 @@
   <h1 class="title is-3">Latest Movies</h1>
   <hr/>
 
-
-  <div class="columns is-vcentered">
-    <div class="column is-half">
-      <div class="tile ">
-        <div class="box">
-      <a href="movie.html">
-        <figure class="image is-128x128">
-          <img src="images/91WNnQZdybL._AC_SL1500_.jpg">
-        </figure>
-      </a>
-    </div>
-    
-     <h2 class="title is-3">Title 1</h1>
-      <p>Hello World
-      Second level
-      
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. <br>Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-      
-
-    </div>
-  </div>
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128 is-inline-block">
-          <img src="images/avengers-endgame-original-movie-poster-15x21-in-2019-anthony-russo-robert-downey-jr.jpg">
-      </a>
-    </div>
-    <p>Hello World
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128">
-          <img src="images/parasite-film-tribute-1.jpg">
-        </figure>
-      </a>
-    </div>
-    <p>Hello World
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-    </div>
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128">
-          <img src="images/unnamed (5).jpg">
-        </figure>
-      </a>
-    </div>
-    <p>Hello World
-     
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-  </div>
-  </div>
-
-  <h1 class="title is-3">Reccomendations</h1>
-  <hr/>
-
-
-  <div class="columns is-vcentered">
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128">
-          <img src="images/91WNnQZdybL._AC_SL1500_.jpg">
-        </figure>
-      </a>
-    </div>
-    
-    <br/>
-     <h2 class="title is-3">Title 1</h1>
-      <p>Hello World
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. <br>Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-  </div>
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128 is-inline-block">
-          <img src="images/avengers-endgame-original-movie-poster-15x21-in-2019-anthony-russo-robert-downey-jr.jpg">
-      </a>
-    </div>
-    <p>Hello World
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128">
-          <img src="images/parasite-film-tribute-1.jpg">
-        </figure>
-      </a>
-    </div>
-    <p>Hello World
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-    </div>
-    <div class="column is-half">
-      <div class="tile">
-        <div class="box">
-      <a>
-        <figure class="image is-128x128">
-          <img src="images/unnamed (5).jpg">
-        </figure>
-      </a>
-    </div>
-    <p>Hello World
-     
-      Second level
-      Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-      </p>
-    </div>
-  </div>
+  <div class="container" id="movies">
+   
   </div>
 
 
-<p>Hello World
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.
-    
-    Second level
-    Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-    
-    In fermentum leo eu lectus mollis, quis dictum mi aliquet.
-    Morbi eu nulla lobortis, lobortis est in, fringilla felis.
-    Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.
-    Ut non enim metus</p>
-
-  </div>
+  
 
     <nav class="level is-mobile">
       <div class="level-item has-text-centered">
@@ -272,12 +127,13 @@
           <p class="title">789</p>
         </div>
       </div>
-    </nav>
-    
+</nav>    
 
  
 
-
-
+</div>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
